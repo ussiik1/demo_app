@@ -18,8 +18,18 @@ test:
   pool: 5
   timeout: 5000
 
-production:
+production_bak:
   adapter: sqlite3
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
+
+production:
+  adapter: postgresql
+  encoging: utf8
+  reconnect: false
+  database: DATABASE_PRODUCTION
+  pool: 5
+  username: root
+  password:
+  
